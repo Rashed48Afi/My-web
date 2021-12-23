@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+
+
+}
+.maindiv{
+background:rgb(15,110,212);
+height:150px;
+position:relative;
+
+}
+.div1{
+display:flex;}
+
+
+.pic{width:100px;
+height:100px;
+background:#fff;
+margin:10px;
+border-radius:50%;
+}
+
+.pic2{width:150px;
+margin:10px;
+
+
+}
+
+.text{
+width:200px;
+height:200px;
+margin:20px;
+}
+.button{width:300px;
+height:70px;
+position:absolute;
+
+}
+.text h1{color:orange;
+}
+button{
+width:60px;
+height:30px;
+background:green;
+border-radius:90px;
+border:2px solid #fff;
+font-weight:bold;
+color:#fff;
+margin-top:15px;
+outline:none;
+}
+button:hover{background:blue;
+
+}
+
+.div2{
+height:px;
+display:flex;
+align:centet;
+}
+
+.center{width:250px;
+color:blue;
+margin:5px 110px;
+align:center;
+}
+
+
+.div3{background:#fff;
+height:150px;
+display:flex;
+}
+.text2{
+width:200px;
+height:100px;
+margin:10px;
+
+}
+.button2{width:60px;
+background:indigo;
+border-radius:90px;
+border:2px solid green;
+font-weight:bold;
+color:#fff;
+margin-top:15px;
+outline:none;
+
+}
+.button2:hover{
+background:blue;
+}
+.Mon{background:#fff;
+height:180px;
+}
+.progress{
+margin:15px;
+margin-top:20px;
+}
+.mi{width:250px;
+color:green;
+margin-top:50px;
+align:center;
+text-align:center;
+}
+
+*{box-sizing:border-box;
+
+}
+.skill-container{background:#fff;
+width:300px;
+padding:20px;
+}
+.skill-container li{
+list-style-type:none;
+margin:20px;
+font-weight:bold;
+text-transfrom:upercase;
+position:relative;
+}
+.skill-container li:before{
+content:'';
+position:absolute;
+top:calc(100% + 5px);
+left:0px;
+background-color:rgb(170,167,173);
+width:95%;
+height:15px;
+border-radius:1000px;
+}
+
+.skill-container li:after{
+content:'';
+position:absolute;
+top:calc(100% + 5px);
+left:0px;
+background-color:rgb(249,249,250);
+width:0;
+height:15px;
+border-radius:50px;
+animation-duration:3s;
+animation-timing-function:linear;
+animation-delay:2s;
+animation-iteration-count:infinite;
+direction:farward;
+
+}
+
+.skill-container li.html::after{
+animation-name: html;
+}
+@keyframes html{
+to{width:90%;
+background-color:orange;
+}
+
+}
+
+.skill-container li.css::after{
+animation-name: css;
+}
+@keyframes css{
+to{width:90%;
+background-color:blue;
+}
+
+}
+
+
+.skill-container li.js::after{
+animation-name:js;
+}
+@keyframes js{
+to{width:50%;
+background-color:indigo;
+}
+
+}
+
+
+.skill-container li.bo::after{
+animation-name:bo;
+}
+@keyframes bo{
+to{width:40%;
+background-color:green;
+}
+
+}
+
+
+.skill-container li.java::after{
+animation-name: java;
+}
+@keyframes java{
+to{width:20%;
+background-color:red;
+}
+
+}
+.skill-container li.c::after{
+animation-name: c;
+}
+@keyframes c{
+to{width:10%;
+background-color:yellow;
+}
+
+}
+
+
+.skill-container li.python::after{
+animation-name: python ;
+}
+@keyframes python {
+to{width:5%;
+background-color:red;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="maindiv">
+
+<div class="div1" id="second">
+<div class="image">
+<img class ="pic" src="download/Afi.jpeg">
+</div>
+<div class="text" id="first">
+<h6>Hello my name</h6>
+<h1>RASHED AFI</h1>
+<h5>web designer</h5>
+<button type="button">submit</button>
+<button type="button">ok</button>
+</div>
+</div>
+</div>
+<div class="div2">
+<div class="center">
+<h3>ABOUT ME</h3>
+</div>
+</div>
+<div class="Mon">
+<div class="div3">
+<img class="pic2" src="download/hijab.jpg">
+<div class="text2">
+<h6>AFI designed & web designer</h6>
+<h6>I am web designer.
+I known learning programming language of HTML,CSS,JavaScript and Bootstrap.
+I known try to learning programming language of Python,C++,PHP,Java,jQuery and MySQL etc.
+Human beings can alter their lives by altering their attitudes of mind.Life is always learning in the new.</h6>
+
+<button class="button2" type="button">submit</button>
+<button class="button2"type="button">ok</button>
+</div>
+</div>
+
+<div class="progress">
+<div class="mi">
+<h1>MY SKILLS</h1>
+</div>
+<div class="skill-container">
+<li class="html">HTML</li>
+<li class="css">CSS</li>
+<li class="js">JavaScript</li>
+<li class="bo">Bootstrap</li>
+<li class="java">Java</li>
+<li class="c">C++</li>
+<li class="python">Python</li>
+</div>
+
+
+
+</div>
+
+</div>
+</body>
+</html>
