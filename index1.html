@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Caculator paroject</title>
+
+<style type="text/css">
+body{margin:0;
+padding:0;
+background-color:;}
+
+.calculator{margin:auto;
+width:280px;
+margin-top:15px}
+
+form{width:250px;
+background: silver;
+padding:30px 15px 15px 15px;
+webkit-box-shadow:0 2px 5px 2px rgba(0,0,0,.6);
+box-shadow:0 2px 5px 2px rgba(0,0,0,.6);
+}
+
+input[type="text"]{width:100%;
+font-size:36px;
+
+
+padding:5px 5px;
+color:black;
+font-weight:bold;
+box-sizing:border-box;
+text-align:right;
+webkit-box-shadow:0 2px 5px 2px rgba(0,0,0,.6);
+box-shadow:0 2px 5px 2px rgba(0,0,0,.6) inset}
+
+::-webkit-input-placeholder{font-size:35px;
+color:blue;
+opacity:0.2}
+
+input[type="button"]{width:58px;
+height:55px;
+font-size:22px;
+margin-bottom:5px;
+
+}
+
+input[type="button"]:hover{border:2px dotted yellow}
+
+input[class="red"]{
+background:red;
+font-weight:bolder;
+border:none;
+border-radius:3px}
+input[class="red"]:hover{border:2px soid silver;
+}
+
+input[class="green"]{
+background:green;
+border:none;
+font-weight:bold;
+border-radius:3px;
+}
+input[class="green"]:hover{
+
+
+color:#fff}
+
+input[class="white"]{background :white;
+color:black;
+font-weight:bold;
+border:none}
+input[class="white"]:hover{border:2px soid silver;
+}
+
+hr{padding:5px 0}
+
+</style>
+</head>
+
+<body>
+   <div class="calculator">
+      <form action="" name="calculator">
+     
+          <input type="text" name="screen" placeholder="Rashed Mahmud" disabled>
+          <hr>
+          <input class="red" type="button" value="√" onclick="calculator.screen.value =Math.sqrt(calculator.screen.value)">
+          <input class="red" type="button" value="AC" onclick="calculator.screen.value =''">
+          <input class="red" type="button" value="C" onclick="calculator.screen.value =''">
+          <input class="red" type="button" value="Back" onclick="calculator.screen.value = calculator.screen.value.slice(0,-1)">
+          <br>
+          <input class="green" type="button" value="7" onclick="calculator.screen.value +='7'">
+          <input class="green" type="button" value="8" onclick="calculator.screen.value +='8'">
+          <input class="green" type="button" value="9" onclick="calculator.screen.value +='9'">
+          <input class="white" type="button" value="+" onclick="calculator.screen.value +='+'">
+          <br>
+          <input class="green" type="button" value="4" onclick="calculator.screen.value +='4'">
+          <input class="green" type="button" value="5" onclick="calculator.screen.value +='5'">
+          <input class="green" type="button" value="6" onclick="calculator.screen.value +='6'">
+          <input class="white" type="button" value="-" onclick="calculator.screen.value +='-'">
+          <br>
+          <input class="green" type="button" value="1" onclick="calculator.screen.value +='1'">
+          <input class="green" type="button" value="2" onclick="calculator.screen.value +='2'">
+          <input class="green" type="button" value="3" onclick="calculator.screen.value +='3'">
+          <input class="white" type="button" value="*" onclick="calculator.screen.value +='*'">
+          <br>
+          <input class="green" type="button" value="0" onclick="calculator.screen.value +='0'">
+          <input class="green" type="button" value="." onclick="calculator.screen.value +='.'">
+          <input class="white" type="button" value="=" onclick="calculator.screen.value =eval(calculator.screen.value)">
+          <input class="white" type="button" value="/" onclick="calculator.screen.value +='/'">
+
+      </form>
+   </div>
+</body>
+</html>
